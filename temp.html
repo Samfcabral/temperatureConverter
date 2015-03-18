@@ -11,8 +11,8 @@
     <h2>Temperature Converter</h2>
     <h4>Please enter the temperature in Fahrenheit</h4>
     <div ng-controller="TempCtrl">
-      <form ng-submit="calcTemp(temp)">
-        <input type="text" ng-model="temp" size="20" placeholder="Enter temperature">
+      <form>
+        <input type="text" ng-model="temp" ng-change="calcTemp(temp)" size="20" placeholder="Enter temperature">
         <input class="btn-primary" type="submit" value="Enter">
       </form>
 
